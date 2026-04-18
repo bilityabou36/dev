@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Starter template for AWS DOP-C02 DevSecOps lab
+
+Resources:
+  DevSecOpsArtifactBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      VersioningConfiguration:
+        Status: Enabled
+
+Outputs:
+  ArtifactBucketName:
+    Description: S3 bucket for lab artifacts
+    Value: !Ref DevSecOpsArtifactBucket

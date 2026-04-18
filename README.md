@@ -1,15 +1,58 @@
-# What is this?
+# AWS DOP-C02 DevSecOps Lab
 
-The github.dev web-based editor is a lightweight editing experience that runs entirely in your browser. You can navigate files and source code repositories from GitHub, and make and commit code changes.
+This project is a hands-on AWS lab designed to cover the six domains of the AWS Certified DevOps Engineer - Professional (DOP-C02) exam:
 
-There are two ways to go directly to a VS Code environment in your browser and start coding:
+1. SDLC Automation
+2. Configuration Management and IaC
+3. Resilient Cloud Solutions
+4. Monitoring and Logging
+5. Incident and Event Response
+6. Security and Compliance
 
-* Press the . key on any repository or pull request.
-* Swap `.com` with `.dev` in the URL. For example, this repo https://github.com/github/dev becomes http://github.dev/github/dev
+## Objective
 
-Preview the gif below to get a quick demo of github.dev in action.
+Build an end-to-end DevSecOps pipeline on AWS that:
+- pulls code from GitHub
+- builds and tests an application
+- deploys infrastructure with CloudFormation
+- runs security checks
+- enables monitoring and tracing
+- automates remediation events
+- demonstrates resilience and high availability
 
-![github dev](https://user-images.githubusercontent.com/856858/130119109-4769f2d7-9027-4bc4-a38c-10f297499e8f.gif)
+## Initial Scope
 
-# Why?
-It’s a quick way to edit and navigate code. It's especially useful if you want to edit multiple files at a time or take advantage of all the powerful code editing features of Visual Studio Code when making a quick change. For more information, see our [documentation](https://github.co/codespaces-editor-help).
+Phase 1:
+- GitHub repository
+- Python sample application
+- BuildSpec for AWS CodeBuild
+- CloudFormation starter template
+
+## Planned AWS Services
+
+- AWS CodePipeline
+- AWS CodeBuild
+- AWS CodeConnections
+- AWS CloudFormation
+- Amazon EC2
+- Elastic Load Balancing
+- Amazon CloudWatch
+- AWS Lambda
+- Amazon EventBridge
+- AWS Systems Manager
+- AWS IAM
+- AWS KMS
+- AWS CloudTrail
+
+## Repo Structure
+
+```text
+architecture/
+app/
+infrastructure/cloudformation/
+pipeline/
+scripts/
+monitoring/
+incident-response/
+security/
+evidence/
